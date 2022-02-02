@@ -76,10 +76,12 @@ def idlist():
     print the id list in the following format:
         ID    NAME
     """
-
+    
     committee_namelist = list()
 
     # committee posts
+    # change accordingly
+    # in this case, the following are used
     posts = ["Head Prefect", "Assistant Head Prefect", "Secretary", "Assistant Secretary", "Treasurer", 
     "Counsellor 1", "Counsellor 2", "Counsellor 3","Counsellor 4","Counsellor 5", "Junior Head Prefect", 
     "Junior Secretary", "Junior Treasurer", "Junior Counsellor 1", "Junior Counsellor 2"]
@@ -120,7 +122,8 @@ def dutymaker():
     """
     
     temp_names = list()
-
+    
+    # **OPTIONAL**
     # committee board members
     committee = list()
     for row in namelist:
@@ -129,7 +132,8 @@ def dutymaker():
 
         else:
             temp_names.append(row)
-
+    # **OPTIONAL**
+    
     # for each type of duty spot
     # Duty, num of people, """Morning, Recess Junior, Recess Senior""" start from list[2]
     for time in range(2, len(dutylist[0]), 1):
