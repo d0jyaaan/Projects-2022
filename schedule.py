@@ -63,7 +63,7 @@ def timetable_generator(subject, classes, timetable, n):
         if len(domain[class_name]) != 0:
             # get random subject
             rand_subject = domain[class_name].pop()
-            if constraints(available_slot, domain, class_name, timetable, classes, rand_subject):
+            if constraints(available_slot, domain, class_name, timetable, classes, subject, rand_subject):
                 break
         
         else:
@@ -72,17 +72,43 @@ def timetable_generator(subject, classes, timetable, n):
         count += 1
         
 
-def constraints(slot, domain, name, timetable, classes, subject):
+def constraints(slot, domain, class_name, timetable, classes, subject, rand_subject):
     """
     check whether the assignment satisfies the constraints 
     and remove any suitable values from the domain
     """
-
+    day = slot[0]
+    period = slot[1]
+    
+    timetable[class_name].structure[day][period] = rand_subject
+    
+    count = 0
+#   make sure each class has correct amount of periods of the subject
+    for temp_day in timetable[class_name].structure:
+        for temp_domain in timetable[class_name].structure[temp_day].values():
+            if rand_subject in temp_domain:
+                count += 1
+                
+     # TODO           
+    if count == subject[rand_subject[0]].minimum:
+        
+    
     # IMPO : iterate through the original but use a deepcopy to keep new values
-    print("\n\n",slot,"\n\n", domain,"\n\n", name,"\n\n", timetable,"\n\n", classes,"\n\n", subject)
+#     print("\n\n",slot,"\n\n", domain,"\n\n", name,"\n\n", timetable,"\n\n", classes,"\n\n", subject)
+#     for name in domain:
+#         print(name)
+#         print(domain[name])
+        
+    for i in timetable:
+        i.structure[day][period]
+        
+#         do this when the current assignment is acceptable else dont
+
     for name in domain:
-        print(name)
-        print(domain[name])
+        if subject in domain[name][day][period]:
+            if name != class_name:
+                domain[name][day][slot].remove(subject)
+
 
     return True
 
@@ -99,33 +125,23 @@ def periods(subject, classes, timetable):
         my_dict[name] = dict()
         domain[name] = list()
 
-        # for id in classes[name].subjects:
-        #     # get the domain
-        #     for number in range(0, subject[id].minimum, 1):  
-        #         for i in classes[name].teachers:
-        #             if i[0] == id:
-        #                 domain[name].append(i)
-
-            # my_dict[name][id] = subject[id].minimum
-            # print(my_dict[name][id])
-
         # randomize the domain
         random.shuffle(domain[name])
 
+#   assign a domain that contains all the subj to all the periods 
     for name in timetable:
+        domain[name] = dict()
         for day in timetable[name].structure:
-            domain[day] = dict()
+            domain[name][day] = dict()
             for period in timetable[name].structure[day]:
                 lst = list()
                 for i in classes.values():
                     for subj in i.teachers:
                         lst.append(subj)
-                domain[day][period] = lst
-                # domain[day][period] = 
+                domain[name][day][period] = lst
     
-    for i in domain.values():
-        for j in i.values():
-            print(j)
+    print(domain)
+            
     return my_dict, domain
 
 
