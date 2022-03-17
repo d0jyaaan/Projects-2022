@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Timetable
+{% endblock %}
+    
+{% block main %}
+    <div class="container-md" style="padding-top: 30px">
+        {% for i in timetable.keys() %}
+            <h1 style="font-weight: bold; padding-left: 10px; text-align: center">{{ i }}</h1>
+        
+                <div style="padding-left: 10px; table-layout: fixed;"> 
+                    <table class="table table-bordered">
+
+                        <thead>
+                            <td>
+                            </td>
+                            {% for i in range(0, max_val[i] , 1)%}
+                                <td style="text-align: center; font-weight: 10px">
+                                {{8 + i}}:00 - {{9+i}}:00
+                                </td>
+                            {% endfor %}
+
+                        </thead> 
+
+                        <tbody>
+                            {% for j in timetable[i].structure %}
+
+                            <tr style="height:100px;">
+                                <th scope="row" style="width: 80px; font-size: 30px; text-align: center; vertical-align: middle">{{ j[:2] }}</th>
+                                
+                                {% for k in timetable[i].structure[j].values() %}
+                                
+                                <td style="width: 200px">
+                                    <p style="text-align: center; vertical-align: middle; font-size: 25px">
+                                        {{ subjects[k[0]].name[:10] }} 
+                                    </p>
+                                    <p style="text-align: center; vertical-align: middle; font-size: 15px">
+                                        {{k[1]}}
+                                    </p>
+                                </td>
+                                {% endfor %}
+                                
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <br>
+                <hr>
+                <br>
+
+        {% endfor %}
+    </div>
+{% endblock %}

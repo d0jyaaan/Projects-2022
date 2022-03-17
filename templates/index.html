@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Home
+{% endblock %}
+
+{% block main %}
+    <div class="container-md" style="padding-top: 30px">
+        <h2 style="font-weight:bold; padding: 5px">
+            Instructions
+        </h2>
+        <hr style="border-width:2px">
+        <h3 style="padding-left: 10px">
+            <ul>
+                <li>
+                    Create 2 CSV (Comma Seperated Value) files with the following format:
+                </li>
+            <ul>
+        </h3>
+        
+        <p style="text-align:center; padding-top: 20px">
+            <img style="box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2); margin:10px" class="center" src="static/Format-Class.png">
+            <img style="box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2); margin:5px" class="center" src="static/Format-Subject.png">
+        </p>
+        <br>
+        <h3 style="padding-left: 10px; font-weight:bold">
+            Example
+        </h3>
+
+        <p style="text-align:center; padding-top: 20px">
+            <img style="box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2); margin:10px" class="center" src="static/example1.png">
+            <img style="box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2); margin:5px" class="center" src="static/example2.png">
+        </p>
+        <br>
+        
+        <h3 style="padding-left: 10px">
+            <ul>
+                <li>
+                    Upload the files and press generate
+                </li>
+                <br>
+                <li>
+                    Reload the generated page to generate a different timetable
+                </li>
+            <ul>
+        </h3>
+        <br>
+
+        <h2 style="font-weight:bold; padding-left: 10px">
+            Generate
+        </h2>
+        <hr style="border-width:2px">
+    </div>
+
+    <form action="/" method="post" enctype="multipart/form-data" class="container-md" style="padding-top: 30px"> 
+        
+        <label style="padding-left:10px">
+            <h3>
+                File 1 - (Class Names and Subjects Taken):
+            </h3>
+        </label>
+
+        <input style="padding-left: 10px" type="file" id="classes" name="classes"/>
+        
+        <label style="padding-left:10px">
+            <h3>
+                File 2 - (Subjects, Code and Teachers):
+            </h3>
+        </label>
+
+        <input style="padding-left: 10px" type="file" id="subject" name="subject"/>
+        
+        <br /><br />
+        
+        <button type="submit" style="padding-left: 10px" class="btn btn-primary mb-3">Generate</button>
+
+    </form>
+    
+{% endblock %}
