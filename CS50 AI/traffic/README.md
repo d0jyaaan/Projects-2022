@@ -1,0 +1,4 @@
+In the first test with convolution and max pooling only done once, an accuracy of around 0.7 is obtained. To increase the accuracy I tried to increase the number of times convolution and max pooling is done. With convolution and max pooling done twice, the accuracy increase to 0.9686. By adding another convolution and max pooling, an accuracy of 0.9735 was obtained.
+
+I tried to increase the size of filters for the convolutional layers and got a lower accuracy of 0.9602 as well as getting a longer runtime. I increased the dropout value and it increased to 0.9792. I added a hidden layer and the accuracy didnt change much.
+I added another hidden layer with a bigger size and the accuracy didnt change much also.
