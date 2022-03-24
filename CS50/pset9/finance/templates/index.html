@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <p style="font-size:20px; font-weight:bold">Portfolio</p>
+
+    <table class="table table-striped" style="font-size:13px">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Price</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% if stock != None %}
+                {% for row in stocks %}
+                    <tr>
+                        <td>{{ row["name"] }}</td>
+                        <td>{{ row["stock"] }}</td>
+                        <td>{{ row["price"] }}</td>
+                        <td>{{ row["value"] }}</td>
+                        <td>{{ row["total"] }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            <tr style="font-weight:bold">
+                <td scope="col">CASH</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cash }}</td>
+            </tr>
+
+            <tr style="font-weight:bold">
+                <td scope="col"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ total }}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+{% endblock %}
