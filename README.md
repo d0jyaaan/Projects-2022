@@ -9,7 +9,7 @@
   
   <br>
   
-  Programming languages used:
+Languages used:
   <ul>
     <li>Python</li>
     <li>Html</li>
