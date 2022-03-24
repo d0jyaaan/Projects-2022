@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+        <div style="font-weight: bold; font-size: 20px">
+            Log In
+        </div>
+
+        <br>
+
+        <!--username-->
+        <div class="form-group">
+            <input autocomplete="off" id = "username" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+
+        <!--password-->
+        <div class="form-group">
+            <input class="form-control" id = "password" name="password" placeholder="Password" type="password" pattern=".{1,}">
+        </div>
+
+        <div class="error">{{ error }}</div>
+
+        <!--login button-->
+        <button class="btn btn-primary" type="submit">Log In</button>
+
+        <script>
+            username.onkeyup = function(){
+                document.querySelector(".error").style.display = "none";
+            };
+
+            password.onkeyup = function(){
+                document.querySelector(".error").style.display = "none";
+            };
+        </script>
+
+
+    </form>
+
+{% endblock %}

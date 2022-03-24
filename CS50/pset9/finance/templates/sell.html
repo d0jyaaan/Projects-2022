@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div class="form-group">
+
+            <!--find symbol input-->
+            <p>
+                <select class="form-control" id ="symbol" name="symbol" placeholder="Find Stock" type="text">
+                    {% for row in stocks %}
+                        <option>{{ row["stock"] }}</option>
+                    {% endfor %}
+                </select>
+
+                <input class="form-control" style="width: 70px" id = "num_stock" name="shares" type="number" min="1">
+
+                <button id="find" class="btn btn-primary" type="submit">Sell</button>
+            </p>
+
+            <div class="error">{{ error }}</div>
+
+        </div>
+
+        <script>
+            symbol.onkeyup = function(){
+                document.querySelector(".error").style.display = "none";
+            };
+
+        </script>
+    </form>
+
+
+{% endblock %}
