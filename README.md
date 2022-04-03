@@ -14,6 +14,8 @@
     <li>Min / Max Point</li>
   </ul>
   
-  Graph the quadratic and the slope
-  https://youtu.be/FUYXnK99QFA
+  It also graphs the quadratic and the slope
+  <br>
+  An example of the usage can be found here:
+   https://youtu.be/FUYXnK99QFA
   <br>
