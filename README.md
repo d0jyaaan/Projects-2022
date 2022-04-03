@@ -5,7 +5,7 @@
 
 ## About <a name = "about"></a>
 <p>
-  This is a quadratic calculator that finds:
+  This is a quadratic function calculator that finds:
   <ul>
     <li>Roots</li>
     <li>Y-intercept
@@ -14,7 +14,7 @@
     <li>Min / Max Point</li>
   </ul>
   
-  It also graphs the quadratic and the slope
+  It also graphs the quadratic function and the slope
   <br>
   An example of the usage can be found here:
    https://youtu.be/FUYXnK99QFA
