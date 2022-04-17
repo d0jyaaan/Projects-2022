@@ -2,7 +2,7 @@
 
 ## Table of Contents
 + [About](#about)
-+ [Instructions](#instructions)
++ [Usage](#usage)
  
 ## About <a name = "about"></a>
 <p>
@@ -16,7 +16,7 @@
     
 </p>
 
-## Instructions <a name = "instructions"></a>
+## Usage <a name = "usage"></a>
 ```
 run python base.py in terminal
 ```
