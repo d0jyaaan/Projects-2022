@@ -1,6 +1,7 @@
 VALUES = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
 OPERANDS =["+", "-", "*", "/"]
 
+
 def main():
 
     print("\n")
@@ -94,7 +95,7 @@ def operate(original, end, equation):
                 if lst[i] == OPERANDS[j]:
                     tracker.append((i, j+1))
 
-        tracker = sorted(tracker, key=lambda x:x[1], reverse=True)
+        tracker = sorted(tracker, key=lambda x: x[1], reverse=True)
         # print(tracker)
         op = int(tracker.pop(0)[0])
         
