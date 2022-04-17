@@ -18,6 +18,6 @@
 
 ## Usage <a name = "usage"></a>
 ```
-run python base.py in terminal
+run  python base.py  in terminal
 ```
 **Note : Answers are rounded to nearest 0 and will always be positive (absolute value)**
