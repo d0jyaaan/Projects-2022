@@ -1,18 +1,23 @@
-# Project-2022 by d0jyaaan
+# Base Calculator
 
 ## Table of Contents
 + [About](#about)
-
++ [Instructions](#instructions)
+ 
 ## About <a name = "about"></a>
 <p>
-  This repository contains all the projects that I made in 2022. Each branch contains a seperate project.
-  
+  A base calculator that converts bases and does basic arithemetic
   <br>
-  
-Languages used:
-  <ul>
-    <li>Python</li>
-    <li>Html</li>
-    <li>CSS</li>
-  </ul>
+  Features:
+    <ul>
+      <li> Base convertion
+      <li> Arithmetic base calculator
+    </ul>
+    
 </p>
+
+## Instructions <a name = "instructions"></a>
+```
+run python base.py in terminal
+```
+**Note : Answers are rounded to nearest 0 and will always be positive (absolute value)**
