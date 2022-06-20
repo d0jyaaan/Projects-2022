@@ -1,18 +1,19 @@
-# Project-2022 by d0jyaaan
+# Dutylist Maker V2
 
 ## Table of Contents
 + [About](#about)
 
 ## About <a name = "about"></a>
 <p>
-  This repository contains all the projects that I made in 2022. Each branch contains a seperate project.
+  Version 2 of the dutylist maker. 
   
   <br>
   
-Languages used:
+Updates
   <ul>
-    <li>Python</li>
-    <li>Html</li>
-    <li>CSS</li>
+    <li>Formated Excel file printing</li>
+    <li>Dynamic duty list making</li>
+    <li>Better algorithm</li>
+    <li>Allows more constaints</li>
   </ul>
 </p>
