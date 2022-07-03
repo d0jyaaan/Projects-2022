@@ -1,18 +1,21 @@
-# Project-2022 by d0jyaaan
+# Quadratic
 
 ## Table of Contents
 + [About](#about)
 
 ## About <a name = "about"></a>
 <p>
-  This repository contains all the projects that I made in 2022. Each branch contains a seperate project.
-  
-  <br>
-  
-Languages used:
+  This is a quadratic function calculator that finds:
   <ul>
-    <li>Python</li>
-    <li>Html</li>
-    <li>CSS</li>
+    <li>Roots</li>
+    <li>Y-intercept
+    <li>Vertex Form</li>
+    <li>Slope</li>
+    <li>Min / Max Point</li>
   </ul>
-</p>
+  
+  It also graphs the quadratic function and the slope
+  <br>
+  An example of the usage can be found here:
+   https://youtu.be/FUYXnK99QFA
+  <br>
