@@ -1,0 +1,316 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2832c2
+}
+
+tr {
+  font-size: 20px;
+}
+
+table {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+    z-index: 1000;
+}
+
+section {
+    overflow: hidden;
+    padding: 80px 0;
+  }
+  
+  .section-bg {
+    background-color: #eee;
+  }
+  
+  .section-header {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f90;
+    text-transform: uppercase;
+    font-family: var(--font-default);
+  }
+  
+  .section-header p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--font-primary);
+  }
+  
+  .section-header p span {
+    color: var(--color-primary);
+  }
+
+  /* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #2832c2;
+    width: 0%;
+    z-index: 1000;
+}
+
+/* Evolution of Airplane */
+.history .history-box {
+    padding: 30px;
+    background: #2832c2;
+    color: #fff;
+}
+  
+.history .history-box h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+  
+.history .history-box p {
+    margin-bottom: 30px;
+}
+
+
+.history .history-box .more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+}
+  
+.history .history-box .more-btn i {
+    font-size: 14px;
+}
+  
+.history .history-box .more-btn:hover {
+    color: var(--color-primary);
+    background: #fff;
+}
+  
+.history .icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    transition: 0.3s;
+}
+  
+.history .icon-box i {
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: rgba(206, 18, 18, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+  
+.history .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-family: var(--font-secondary);
+}
+  
+.history .icon-box p {
+    font-size: 15px;
+    color: #6c757d;
+}
+  
+@media (min-width: 1200px) {
+    .history .icon-box:hover {
+      transform: scale(1.1);
+    }
+}
+
+#img  {
+    transition: transform .2s;
+}
+
+#img:hover {
+    transform: scale(1.15);
+}
+
+#plane_img {
+  transition: transform .2s;
+}
+
+#plane_img:hover{
+  transform: scale(1.25);
+}
+/* End of evolution of Airplane */
+
+
+/* start of stats counter */
+.stats-counter {
+    background: #444ED9;
+    background-size: cover;
+    padding: 100px 0;
+  }
+  
+  @media (min-width: 1365px) {
+    .stats-counter {
+      background-attachment: fixed;
+    }
+  }
+  
+  .stats-counter .stats-item {
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .stats-counter .stats-item span {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .stats-counter .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+/* end of stats counter */
+
+
+.image_dc3 {
+  margin: 30px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  box-shadow: 10px 10px 5px #ccc;
+  width: 500px
+}
+
+#dc_3_img {
+  transition: transform .2s;
+}
+
+#dc_3_img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  font-size: 14px;
+  background-color: #2832c2;
+  padding: 50px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright {
+  font-size: 30px;
+  color: white
+}
+
+.credits {
+  font-size: 25px;
+  color: white
+}
+
+#copyright:hover {
+  text-decoration: none;
+  color: inherit
+}
+
+.dc3-text {
+  padding: 10px; font-family: 'Merriweather Sans', sans-serif; line-height: 1.6;
+}
+
+#dc3_text {
+  display: none;  
+}
+
+.btn {
+  height: 50px;
+  width: 20%;
+  font-size: 20px;
+  margin-left: 30px;
+  background-color: #444ED9;
+}
+
+.model_b_text {
+  font-family: 'Merriweather Sans';
+  line-height: 1.6;
+  font-size: 28px
+}
+
+.model_b_iframe {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.image_b737 {
+  margin: 30px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  box-shadow: 10px 10px 5px #ccc;
+  width: 500px
+}
+
+#img_b737 {
+  transition: transform .2s;
+}
+
+#img_b737:hover {
+  transform: scale(1.05);
+}
+
+.b737_table {
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(255,255,255),
+                0.2em 0.2em .5em rgba(0,0,0,0.3); 
+  border-radius: 10px; 
+  background-color: #ffffff; 
+  color:black;
+  padding-left: 10px;
+}
+
+.b737-text {
+  padding: 10px; font-family: 'Merriweather Sans', sans-serif; line-height: 1.6;
+}
+
+#b737_text {
+  display: none;
+}
+
+#credit:hover {
+  text-decoration: none;
+  color: white
+}
