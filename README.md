@@ -8,7 +8,7 @@
   This repository contains all the projects made in the year 2022.
   <br>Anyone can use the code contained in this repository as long as credit is given.
   
-  Fielda of Focus : Artificial Intelligence, Optimisation
+  Main interests : Artificial Intelligence, Data Science, Optimization Problems
   
   
   Languages used:
